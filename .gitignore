@@ -1,0 +1,20 @@
+# Vagrant
+.vagrant/
+
+# Vagrant packaged boxes
+*.box
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code local workspace settings (optional)
+.vscode/
+
+# VirtualBox related exports or temp files if they appear
+*.vdi
+*.vmdk
+*.tmp

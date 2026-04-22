@@ -1,0 +1,13 @@
+Vagrant.configure("2") do |config|
+  # BEFORE: official Ubuntu base box
+  # config.vm.box = "ubuntu/focal64"
+
+  # AFTER: my custom box with Docker preinstalled
+  config.vm.box = "devops-boxes/ubuntu-focal-docker-virtualization-challenge"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "ubuntu-vagrant-docker-box"
+    vb.memory = "2048"
+    vb.cpus = 2
+  end
+end
