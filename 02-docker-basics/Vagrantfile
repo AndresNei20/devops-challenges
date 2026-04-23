@@ -32,6 +32,7 @@ Vagrant.configure("2") do |config|
   config.vm.boot_timeout = 600
 
   config.vm.synced_folder "../03-docker-advance-concepts", "/challenge3"
+  config.vm.synced_folder "../04-cicd", "/challenge4"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "docker-basics-box-test"
